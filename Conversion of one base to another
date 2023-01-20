@@ -1,0 +1,17 @@
+import java.util.*;
+public class Hello{
+public static String base_convert(String num,int x,int y)
+{
+   return Integer.toString(Integer.parseInt(num,x),y);
+}
+public static void main(String[] args)
+{
+  Scanner sc= new Scanner(System.in);
+  String num=sc.next();
+  int x=sc.nextInt();
+  int y = sc.nextInt();
+  System.out.print(base_convert(num,x,y));
+  }
+
+
+}
