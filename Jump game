@@ -1,0 +1,21 @@
+class Solution {
+    public boolean canJump(int[] nums) {
+        if(nums.length<=1)
+        {
+            return true;
+        }
+       int a = nums[0];
+       int reach=1;
+       while(a>0)
+       {
+           if(reach==nums.length-1)
+           {
+               return true;
+           }
+           a=Math.max(a-1,nums[reach]);
+           reach++;
+       }
+       return false;
+       
+    }
+}
